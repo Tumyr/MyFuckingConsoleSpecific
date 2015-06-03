@@ -9,5 +9,11 @@ namespace ConsoleSpecific
     {
         //efhefh
 
+        public void FuckThemAll()
+        {
+            Console.WriteLine("Это для второго комита");
+        }
+
+
     }
 }
