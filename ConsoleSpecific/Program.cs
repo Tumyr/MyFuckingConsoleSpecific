@@ -11,12 +11,14 @@ namespace ConsoleSpecific
         
         static void Main(string[] args)
         {
-            Detail dt = new Detail();
-            dt.Lenght = dt.ShowDistance();
-            Console.WriteLine("Длина = {0}", dt.Lenght);
+            SawingCenter sc = new SawingCenter();
+            sc.CreateDetail();
+            foreach (Detail d in sc)
+            {
+                Console.WriteLine(d);
+            }
 
-            FileProcessor fp = new FileProcessor();
-            fp.SelectFile();
+            
             Console.ReadLine();
         }
     }

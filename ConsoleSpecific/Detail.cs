@@ -76,8 +76,8 @@ namespace ConsoleSpecific
 
         //Ctor
         public Detail(){}
-        public Detail(string name, int length, int width, int many,
-            int rotate, int tborder, int bborder, int lborder, int rborder)
+        public Detail( int length, int width, int many,
+            int rotate, int tborder, int bborder, int lborder, int rborder,string name)
         {
             _name = name;
             _length = length;
@@ -89,41 +89,9 @@ namespace ConsoleSpecific
             _rborder = rborder;
         }
 
-        private int SetLengthBorder()
-        {
-            Console.WriteLine("Input length border");
-            int inputLengthBorder = Convert.ToInt32(Console.ReadLine());
-            return inputLengthBorder;
-        }
+      
 
-        private int SetWidthBorder()
-        {
-            Console.WriteLine("Input length border");
-            int inputWidthBorder = Convert.ToInt32(Console.ReadLine());
-            return inputWidthBorder;
-        }
 
-        public int GetLengthBorder()
-        {
-            return SetLengthBorder(); ;
-        }
-        
-        public int GetWidthBorder()
-        {
-            return SetWidthBorder();
-        }
-        
 
-        private int GetDistance()
-        {
-            Console.WriteLine("Input distance");
-            int input = Convert.ToInt32(Console.ReadLine());
-            return input;
-        }
-
-        public int ShowDistance()
-        {
-           return GetDistance();            
-        }
     }
 }
